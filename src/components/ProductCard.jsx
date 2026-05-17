@@ -12,7 +12,7 @@ function ProductCard({ item }) {
 
                 <div className="product-card-acctions">
                     <Link className="btn btn-secondary">View Details</Link>
-                    <button className="btn btn-primary">Add to CarT</button>
+                    <button className="btn btn-primary">Add to Cart</button>
                 </div>
             </div>
         </div>
