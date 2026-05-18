@@ -11,7 +11,7 @@ function ProductCard({ item }) {
                 <p className="product-card-price">{item.price}</p>
 
                 <div className="product-card-acctions">
-                    <Link className="btn btn-secondary">View Details</Link>
+                    <Link className="btn btn-secondary" to={`/products/${item.id}`}>View Details</Link>
                     <button className="btn btn-primary">Add to Cart</button>
                 </div>
             </div>

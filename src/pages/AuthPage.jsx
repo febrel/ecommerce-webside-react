@@ -1,12 +1,13 @@
 import React, { useContext, useState } from "react";
-import { AuthContext } from "../contexts/AuthContext";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+// import { AuthContext } from "../contexts/AuthContext";
+import { useAuth } from "../contexts/AuthContext";
 
 function AuthPage() {
   // Variables - Estado
   const [mode, setMode] = useState("signup");
-  const { signUp, user, logout, login } = useContext(AuthContext);
+  const { signUp, user, logout, login } = useAuth();
   const [error, setError] = useState(null);
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
@@ -37,8 +38,7 @@ function AuthPage() {
     <div className="page">
       <div className="container">
         <div className="auth-container">
-          {user && <p>User logged in: {user.email}</p>}
-          <button onClick={() => logout()}>Logout</button>
+          {user && <p> <strong>User logged:</strong>  {user.email}</p>}
           <h1 className="page-title">{mode === "signup" ? "Sign Up" : "Login"}</h1>
 
           <form action="" className="auth-form" onSubmit={handleSubmit(onSubmit)}>
@@ -70,7 +70,7 @@ function AuthPage() {
               {errors.password && <span className="form-error">{errors.password.message}</span>}
             </div>
 
-            <button type="submit" className="btn btn-primary btn-large">Sign Up</button>
+            <button type="submit" className="btn btn-primary btn-large"> {mode === "signup" ? "Sign Up" : "Login"}</button>
           </form>
 
           <div className="auth-switch">

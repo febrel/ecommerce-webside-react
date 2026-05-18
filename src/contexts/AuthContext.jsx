@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
@@ -55,3 +55,10 @@ function AuthProviderWrapper(props) {
 }
 
 export { AuthContext, AuthProviderWrapper };
+
+// Forma de crear un HOOK propio 
+export function useAuth() {
+    const context = useContext(AuthContext);
+
+    return context;
+}
