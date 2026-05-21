@@ -1,5 +1,5 @@
 import React from "react";
-import { getProducts } from "../data/products"
+import { getProducts } from "../data/products";
 import ProductCard from "../components/ProductCard";
 
 function HomePage() {
@@ -20,7 +20,7 @@ function HomePage() {
 
                 <div className="product-grid">
                     {products.map((item) => (
-                        <ProductCard item={item} key={item.id} />
+                        <ProductCard product={item} key={item.id} />
                     ))}
 
                 </div>
