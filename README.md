@@ -1,16 +1,10 @@
-# React + Vite
+# React + Webside
+Shopping cart-type website, built with React.
+<img width="1394" height="817" alt="image" src="https://github.com/user-attachments/assets/5d59eccd-b01d-4cc4-98b1-80fa0e1106d0" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Allows you to log in and register
+<img width="1482" height="640" alt="image" src="https://github.com/user-attachments/assets/d4277df4-4707-4499-9f07-a66336cc9d31" />
 
-Currently, two official plugins are available:
+It allows you to check the total amount to pay by adding or removing items.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<img width="1482" height="640" alt="image" src="https://github.com/user-attachments/assets/3212f2fa-e210-40ef-a470-d3306cd0ffd6" />
